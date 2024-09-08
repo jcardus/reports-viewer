@@ -37,6 +37,7 @@ jobs:
           curl -o vivliostyle.zip https://vivliostyle.org/downloads/vivliostyle-viewer-latest.zip
           unzip vivliostyle.zip
           rm -v viewer/resources/vivliostyle*
+          cp -vr src/* .
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
